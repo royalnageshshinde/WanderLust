@@ -59,6 +59,13 @@ const store = MongoStore.create({
 store.on("error", () => {
     console.log("ERROR IN MONGO SESSION STORE",err);
 });
+
+
+// Root route - redirect to /listings
+app.get("/", (req, res) => {
+    res.redirect("/listings");
+});
+
 const sessionOptions = {
     store,
     secret: process.env.SECRET_KEY,
