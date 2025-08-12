@@ -111,3 +111,61 @@ body{
     padding-left: 0;
     padding-right: 0;
 }
+/* Mobile devices (max-width: 576px) */
+@media (max-width: 576px) {
+    .navbar {
+        height: auto;
+        padding: 0.5rem 1rem;
+    }
+
+    .fa-compass {
+        font-size: 1.5rem;
+    }
+
+    .listing-card {
+        margin-bottom: 1rem;
+    }
+
+    .show-img {
+        height: auto;
+        max-height: 200px;
+    }
+
+    .btns {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .show-card {
+        width: 100% !important;
+        margin: auto;
+    }
+}
+
+/* Tablet devices (576px to 768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+    .show-card {
+        width: 90% !important;
+        margin: auto;
+    }
+
+    .listing-card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Small laptops (768px to 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+    .show-card {
+        width: 80% !important;
+        margin: auto;
+    }
+}
+
+/* Large screens (992px and above) */
+@media (min-width: 992px) {
+    .show-card {
+        width: 70% !important;
+        margin: auto;
+    }
+}
